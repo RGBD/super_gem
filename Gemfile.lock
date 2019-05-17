@@ -20,6 +20,8 @@ GEM
       pry (>= 0.9.10, < 0.13.0)
     rainbow (3.0.0)
     rake (10.5.0)
+    rake-compiler (1.0.7)
+      rake
     rubocop (0.69.0)
       jaro_winkler (~> 1.5.1)
       parallel (~> 1.10)
@@ -37,6 +39,7 @@ DEPENDENCIES
   bundler (~> 2.0)
   pry-nav (~> 0.3)
   rake (~> 10.0)
+  rake-compiler (~> 1.0)
   rubocop (~> 0.69)
   super_gem!
 
