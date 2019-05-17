@@ -5,3 +5,5 @@ VALUE rb_hello_world_hello(VALUE self);
 VALUE rb_hello_world_nil(VALUE self);
 VALUE rb_hello_world_false(VALUE self);
 VALUE rb_hello_world_true(VALUE self);
+VALUE rb_hello_world_forty_two(VALUE self);
+VALUE rb_hello_world_float_half(VALUE self);

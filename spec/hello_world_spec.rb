@@ -24,4 +24,14 @@ class HelloWorldSpec < Minitest::Test
   def test_false
     assert_equal false, instance.false
   end
+
+  def test_forty_two
+    assert_equal 42, instance.forty_two
+  end
+
+  def test_float_half
+    result = instance.float_half
+    assert result.is_a?(Float)
+    assert_equal 0.5, result
+  end
 end
