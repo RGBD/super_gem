@@ -1,9 +1,9 @@
 #include "ruby.h"
-#include "stdlib.h"
+#include "./hello_world_class.h"
 
 VALUE SuperGemModule = Qnil;
 
 void Init_super_gem() {
-  printf("Init_super_gem()\n");
   SuperGemModule = rb_define_module("SuperGem");
+  rb_init_hello_world_class();
 }
