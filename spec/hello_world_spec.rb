@@ -34,4 +34,8 @@ class HelloWorldSpec < Minitest::Test
     assert result.is_a?(Float)
     assert_equal 0.5, result
   end
+
+  def test_hello_format
+    assert_equal 'Hello, Petya. Number: 42.', instance.hello_format('Petya', 42)
+  end
 end
