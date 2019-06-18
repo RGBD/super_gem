@@ -38,4 +38,8 @@ class HelloWorldSpec < Minitest::Test
   def test_hello_format
     assert_equal 'Hello, Petya. Number: 42.', instance.hello_format('Petya', 42)
   end
+
+  def test_fib
+    assert_equal 55, instance.fib(10)
+  end
 end
