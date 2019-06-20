@@ -42,4 +42,25 @@ class HelloWorldSpec < Minitest::Test
   def test_fib
     assert_equal 55, instance.fib(10)
   end
+
+  def test_count_ascii_chars
+    assert_equal(
+      { 'a' => 5, 'b' => 2, 'r' => 2, 'c' => 1, 'd' => 1 },
+      instance.count_ascii_chars('abracadabra'),
+    )
+  end
+
+  def test_count_ascii_chars_ruby
+    assert_equal(
+      { 'a' => 5, 'b' => 2, 'r' => 2, 'c' => 1, 'd' => 1 },
+      instance.count_ascii_chars_ruby('abracadabra'),
+    )
+  end
+
+  def test_count_ascii_chars_ruby_same
+    assert_equal(
+      { 'a' => 5, 'b' => 2, 'r' => 2, 'c' => 1, 'd' => 1 },
+      instance.count_ascii_chars_ruby_same('abracadabra'),
+    )
+  end
 end
